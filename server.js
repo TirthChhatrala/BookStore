@@ -5,7 +5,6 @@ const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 const path = require('path'); // Import path module
 
-
 mongoose.connect('mongodb+srv://tirthchhatrala:0BFE6NHzLtgbtMSU@cluster0.elwxkjy.mongodb.net/Bookes', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());

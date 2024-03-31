@@ -15,7 +15,7 @@ function CustomItemContext({ children }) {
 	useEffect(() => {
 		// Fetch products from the backend and dispatch 'SET_PRODUCTS' action
 		const fetchData = async () => {
-			const response = await fetch("http://localhost:5000/api/books");
+			const response = await fetch("https://bookstore-dym4.onrender.com/api/books");
 			const products = await response.json();
 			console.log(products);
 			setProducts(products);
