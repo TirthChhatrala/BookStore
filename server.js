@@ -5,7 +5,8 @@ const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 const path = require('path'); // Import path module
 
-mongoose.connect('mongodb://localhost:27017/Bookes', { useNewUrlParser: true, useUnifiedTopology: true });
+
+mongoose.connect('mongodb+srv://tirthchhatrala:0BFE6NHzLtgbtMSU@cluster0.elwxkjy.mongodb.net/Bookes', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
